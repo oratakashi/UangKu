@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UangKu</string>
+    <string name="label_open_source">Open Source</string>
+    <string name="label_money_management_app">Money Management App</string>
+    <string name="label_developed_by">Developed By</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_dashboard">Dashboard</string>
+    <string name="label_history">History</string>
+    <string name="label_pengaturan">Pengaturan</string>
+</resources>

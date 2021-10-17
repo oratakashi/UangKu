@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TabCustom" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+</resources>
