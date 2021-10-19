@@ -8,4 +8,11 @@
     <string name="label_dashboard">Dashboard</string>
     <string name="label_history">History</string>
     <string name="label_pengaturan">Pengaturan</string>
+    <string name="label_belum_login">Belum Login</string>
+    <string name="label_not_login_deskription">Login untuk mengaktifkan backup online!</string>
+    <string name="foo">Lorem Ipsum</string>
+    <string name="label_kategori">Kategori</string>
+    <string name="label_remove_data">Hapus Data</string>
+    <string name="label_about_app">Tentang Aplikasi</string>
+    <string name="label_pencarian">Pencarian</string>
 </resources>

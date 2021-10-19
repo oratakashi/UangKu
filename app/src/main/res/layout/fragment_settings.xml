@@ -18,7 +18,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                style="@style/Montserrat.Bold.Black1.18sp"
+                style="@style/Montserrat.Bold.Black1.24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_pengaturan"
@@ -36,6 +36,71 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <com.kennyc.view.MultiStateView
+                android:id="@+id/msvUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:msv_animateViewChanges="true"
+                android:layout_marginTop="16dp">
+
+                <include
+                    android:id="@+id/cvEmpty"
+                    layout="@layout/layout_empty_user"/>
+            </com.kennyc.view.MultiStateView>
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Montserrat.Medium.Black3.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_pengaturan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/msvUser" />
+
+            <com.oratakashi.uangku.component.SingleListItem
+                android:id="@+id/menuCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_kategori"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.oratakashi.uangku.component.SingleListItem
+                android:id="@+id/menuDeleteContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_remove_data"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menuCategory" />
+
+            <com.oratakashi.uangku.component.SingleListItem
+                android:id="@+id/menuAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_about_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menuDeleteContent" />
+
+            <com.oratakashi.uangku.component.Brand
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menuAbout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

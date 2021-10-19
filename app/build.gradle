@@ -58,7 +58,7 @@ dependencies {
     releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.2.0"
 
     //AndroidViewBinding Helper
-    implementation 'com.oratakashi:AndroidViewBinding:3.11'
+    implementation 'com.oratakashi:AndroidViewBinding:3.12'
 
     //Swipe Refresh
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"

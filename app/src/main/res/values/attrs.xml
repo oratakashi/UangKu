@@ -13,4 +13,10 @@
         </attr>
         <attr name="allCaps" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="SingleListItem">
+        <attr name="android:text" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="SearchBar">
+        <attr name="android:hint" format="string"/>
+    </declare-styleable>
 </resources>
