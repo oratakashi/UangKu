@@ -1,4 +1,4 @@
-package com.oratakashi.uangku.component
+package com.oratakashi.uangku.component.widget
 
 import android.content.Context
 import android.util.AttributeSet

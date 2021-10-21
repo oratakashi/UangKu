@@ -16,4 +16,11 @@
     <string name="label_about_app">About</string>
     <string name="label_pencarian">Search</string>
     <string name="label_summary">Summary</string>
+    <string name="label_tambah_kategori">Tambah Kategori</string>
+    <string name="label_save">Simpan</string>
+    <string name="label_category_name">Nama Kategori</string>
+    <string name="label_jenis">Jenis</string>
+    <string name="label_pilih_jenis">Pilih Jenis</string>
+    <string name="label_pemasukan">Pemasukan</string>
+    <string name="label_pengeluaran">Pengeluaran</string>
 </resources>

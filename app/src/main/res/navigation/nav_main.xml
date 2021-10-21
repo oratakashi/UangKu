@@ -32,5 +32,22 @@
         android:id="@+id/categoryFragment"
         android:name="com.oratakashi.uangku.ui.menu.settings.category.CategoryFragment"
         android:label="fragment_category"
-        tools:layout="@layout/fragment_category" />
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_createCategoryFragment"
+            app:destination="@id/createCategoryFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/createCategoryFragment"
+        android:name="com.oratakashi.uangku.ui.menu.settings.category.create.CreateCategoryFragment"
+        android:label="fragment_create_category"
+        tools:layout="@layout/fragment_create_category" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
 </navigation>
