@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_developed_by">Dikembangkan Oleh</string>
+    <string name="label_dashboard">Beranda</string>
+    <string name="label_history">History</string>
+    <string name="label_pengaturan">Pengaturan</string>
+    <string name="label_belum_login">Login</string>
+    <string name="label_not_login_deskription">Login untuk mengaktifkan backup online!</string>
+    <string name="foo">Lorem Ipsum</string>
+    <string name="label_kategori">Kategori</string>
+    <string name="label_remove_data">Hapus Data</string>
+    <string name="label_about_app">Tentang Aplikasi</string>
+    <string name="label_pencarian">Pencarian</string>
+    <string name="label_summary">Ringkasan</string>
+</resources>
