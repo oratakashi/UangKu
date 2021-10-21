@@ -25,4 +25,6 @@
     <color name="red50">#DE1B1B</color>
     <color name="transparentGrey">#CD424242</color>
     <color name="sparator">#E5E5E5</color>
+    <color name="cyan">#00C2C2</color>
+    <color name="darkBlue">#004EC2</color>
 </resources>
