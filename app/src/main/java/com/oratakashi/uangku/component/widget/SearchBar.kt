@@ -1,4 +1,4 @@
-package com.oratakashi.uangku.component
+package com.oratakashi.uangku.component.widget
 
 import android.content.Context
 import android.util.AttributeSet
@@ -29,6 +29,8 @@ class SearchBar @JvmOverloads constructor(
             ivBack.onClick { nav.navigateUp() }
         }
     }
+
+
 
     init {
         attrs?.let {

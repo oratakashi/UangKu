@@ -3,16 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_button_primary.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/bg_button_primary_fit.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/bg_tab_inactive.xml" value="0.365625" />
         <entry key="app/src/main/res/drawable/ic_chevron_down.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/selector_button_primary.xml" value="0.21041666666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/custom_primary_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/custom_secondary_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/fragment_activity_type_picker.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_activity_type_picker_list_dialog_item.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/fragment_category.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_create_category.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.18" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_brand.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/layout_centerbar.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/layout_empty_user.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_search_bar.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/layout_single_list_item.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
       </map>
     </option>
