@@ -15,4 +15,5 @@
     <string name="label_remove_data">Delete Data</string>
     <string name="label_about_app">About</string>
     <string name="label_pencarian">Search</string>
+    <string name="label_summary">Summary</string>
 </resources>
