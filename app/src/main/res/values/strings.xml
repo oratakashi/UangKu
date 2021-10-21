@@ -1,18 +1,18 @@
-<resources>
-    <string name="app_name">UangKu</string>
-    <string name="label_open_source">Open Source</string>
-    <string name="label_money_management_app">Money Management App</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">UangKu</string>
+    <string name="label_open_source" tools:ignore="MissingTranslation">Open Source</string>
+    <string name="label_money_management_app" tools:ignore="MissingTranslation">Money Management App</string>
     <string name="label_developed_by">Developed By</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" tools:ignore="MissingTranslation">Hello blank fragment</string>
     <string name="label_dashboard">Dashboard</string>
     <string name="label_history">History</string>
-    <string name="label_pengaturan">Pengaturan</string>
+    <string name="label_pengaturan">Settings</string>
     <string name="label_belum_login">Belum Login</string>
-    <string name="label_not_login_deskription">Login untuk mengaktifkan backup online!</string>
+    <string name="label_not_login_deskription">Login for online backup!</string>
     <string name="foo">Lorem Ipsum</string>
-    <string name="label_kategori">Kategori</string>
-    <string name="label_remove_data">Hapus Data</string>
-    <string name="label_about_app">Tentang Aplikasi</string>
-    <string name="label_pencarian">Pencarian</string>
+    <string name="label_kategori">Category</string>
+    <string name="label_remove_data">Delete Data</string>
+    <string name="label_about_app">About</string>
+    <string name="label_pencarian">Search</string>
 </resources>
