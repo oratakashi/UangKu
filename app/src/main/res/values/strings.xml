@@ -21,7 +21,11 @@
     <string name="label_category_name">Nama Kategori</string>
     <string name="label_jenis">Jenis</string>
     <string name="label_pilih_jenis">Pilih Jenis</string>
-    <string name="label_pemasukan">Pemasukan</string>
-    <string name="label_pengeluaran">Pengeluaran</string>
+    <string name="label_income">Pemasukan</string>
+    <string name="label_expanse">Pengeluaran</string>
     <string name="placeholder_error_empty">%1$s Tidak boleh kosong!</string>
+    <string name="label_confirm_delete">Konfirmasi Hapus</string>
+    <string name="placeholder_delete_message">Apakah anda yakin ingin menghapus %1$s ini?</string>
+    <string name="label_delete">Hapus</string>
+    <string name="label_cancel">Batal</string>
 </resources>

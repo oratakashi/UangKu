@@ -6,12 +6,32 @@
         <entry key="../../../../../layout/compose-model-1636168474165.xml" value="0.9539295392953929" />
         <entry key="../../../../../layout/compose-model-1636169829477.xml" value="1.0" />
         <entry key="../../../../../layout/compose-model-1636170076807.xml" value="0.9539295392953929" />
+        <entry key="app/src/main/res/drawable/bg_button_disable.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/bg_button_primary.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/bg_button_primary_disabled.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/bg_button_primary_light.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/bg_button_primary_outline.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/bg_button_primary_outline_disabled.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/bg_button_red.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/bg_button_secondary.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/bg_button_secondary_disabled.xml" value="0.21041666666666667" />
         <entry key="app/src/main/res/drawable/ic_chevron_down.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/selector_button_primary.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/selector_button_primary_outline.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/selector_button_red.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/selector_button_secondary.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/selector_button_secondary_text_color.xml" value="0.365625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_activity_type_picker.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/adapter_category.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/custom_primary_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/custom_primary_outline_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/custom_red_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/custom_secondary_button.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/fragment_activity_type_picker.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_category.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/fragment_delete_dialog.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_brand.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/layout_empty_user.xml" value="0.25" />

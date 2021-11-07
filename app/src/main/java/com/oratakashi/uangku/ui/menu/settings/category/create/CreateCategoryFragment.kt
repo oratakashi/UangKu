@@ -15,6 +15,7 @@ import com.oratakashi.uangku.component.picker.activitytype.ActivityTypePickerVM
 import com.oratakashi.uangku.databinding.FragmentCreateCategoryBinding
 import com.oratakashi.uangku.domain.model.Category
 import com.oratakashi.uangku.utils.enums.ActivityType
+import com.oratakashi.uangku.utils.hideSoftKeyboard
 import com.oratakashi.viewbinding.core.binding.fragment.viewBinding
 import com.oratakashi.viewbinding.core.tools.onClick
 import com.oratakashi.viewbinding.core.tools.toast
@@ -37,23 +38,28 @@ class CreateCategoryFragment : Fragment() {
             }
 
             btnSave.onClick {
-                if (etName.editText?.text.toString().isEmpty()) {
-                    etName.error = String.format(
-                        getString(R.string.placeholder_error_empty),
-                        "Nama Kategori"
-                    )
-                } else if (etType.editText?.text.toString().isEmpty()) {
-                    etType.error = String.format(
-                        getString(R.string.placeholder_error_empty),
-                        "Jenis"
-                    )
-                } else {
-                    viewModel.addCategory(
-                        Category(
-                            etName.editText?.text.toString(),
-                            etType.editText?.text.toString()
+                btnSave.hideSoftKeyboard()
+                when {
+                    etName.editText?.text.toString().isEmpty() -> {
+                        etName.error = String.format(
+                            getString(R.string.placeholder_error_empty),
+                            "Nama Kategori"
                         )
-                    )
+                    }
+                    etType.editText?.text.toString().isEmpty() -> {
+                        etType.error = String.format(
+                            getString(R.string.placeholder_error_empty),
+                            "Jenis"
+                        )
+                    }
+                    else -> {
+                        viewModel.addCategory(
+                            Category(
+                                etName.editText?.text.toString(),
+                                etType.editText?.text.toString()
+                            )
+                        )
+                    }
                 }
             }
         }
@@ -75,6 +81,7 @@ class CreateCategoryFragment : Fragment() {
             viewModel.state.observe(viewLifecycleOwner) {
                 if(it) {
                     toast("Berhasil Menambah Kategori!")
+                    nav.navigateUp()
                 } else {
                     toast("Gagal Menambah Kategori!")
                 }

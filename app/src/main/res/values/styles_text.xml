@@ -686,6 +686,10 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <style name="Montserrat.SemiBold.Green50.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <!--  Montserrat Red50  -->
     <style name="Montserrat.Red50">
         <item name="android:textColor">@color/red50</item>

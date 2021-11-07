@@ -13,6 +13,12 @@
         </attr>
         <attr name="allCaps" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="PrimaryOutlineButton">
+        <attr name="android:text" format="string" />
+    </declare-styleable>
+    <declare-styleable name="RedButton">
+        <attr name="android:text" format="string" />
+    </declare-styleable>
     <declare-styleable name="SingleListItem">
         <attr name="android:text" format="string"/>
     </declare-styleable>

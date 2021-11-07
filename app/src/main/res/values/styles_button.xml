@@ -16,7 +16,7 @@
     </style>
 
     <style name="Button.White">
-        <item name="android:background">@drawable/selector_button_secondary</item>
+        <item name="android:background">@drawable/selector_button_primary_outline</item>
         <item name="android:textColor">@drawable/selector_button_secondary_text_color</item>
     </style>
 

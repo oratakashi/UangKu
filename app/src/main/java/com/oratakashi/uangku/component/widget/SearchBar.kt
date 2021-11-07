@@ -2,6 +2,7 @@ package com.oratakashi.uangku.component.widget
 
 import android.content.Context
 import android.util.AttributeSet
+import android.widget.EditText
 import androidx.navigation.NavController
 import com.google.android.material.appbar.MaterialToolbar
 import com.oratakashi.uangku.R
@@ -17,19 +18,22 @@ class SearchBar @JvmOverloads constructor(
     MaterialToolbar(context, attrs, defStyleAttr) {
 
     private val binding: LayoutSearchBarBinding by viewBinding()
+    val editText: EditText
+        get() {
+            return binding.etSearch
+        }
 
-    fun hint(text: String){
-        with(binding){
+    fun hint(text: String) {
+        with(binding) {
             etSearch.hint = text
         }
     }
 
     fun setupWithNavController(nav: NavController) {
-        with(binding){
+        with(binding) {
             ivBack.onClick { nav.navigateUp() }
         }
     }
-
 
 
     init {
