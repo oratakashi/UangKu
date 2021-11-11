@@ -84,4 +84,8 @@ class CategoryViewModel(
 
             }).let { return@let disposable::add }
     }
+
+    fun filter(activityType: ActivityType) {
+        filter.postValue(activityType)
+    }
 }

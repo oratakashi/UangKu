@@ -28,4 +28,6 @@
     <string name="placeholder_delete_message">Apakah anda yakin ingin menghapus %1$s ini?</string>
     <string name="label_delete">Hapus</string>
     <string name="label_cancel">Batal</string>
+    <string name="label_activity_filter">Filter Aktivitas</string>
+    <string name="label_all">Semua</string>
 </resources>

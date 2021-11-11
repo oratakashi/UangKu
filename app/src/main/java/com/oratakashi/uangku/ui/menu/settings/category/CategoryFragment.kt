@@ -5,9 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.oratakashi.uangku.R
+import com.oratakashi.uangku.component.picker.activityfilter.ActivityFilterFragment
+import com.oratakashi.uangku.component.picker.activityfilter.ActivityFilterVM
 import com.oratakashi.uangku.component.picker.deletedialog.DeleteDialogFragment
 import com.oratakashi.uangku.databinding.FragmentCategoryBinding
 import com.oratakashi.uangku.utils.enums.ActivityType
@@ -48,6 +51,7 @@ class CategoryFragment : Fragment() {
                     )
                 )
             }
+            cvFilter.onClick { ActivityFilterFragment().show(childFragmentManager, "dialog") }
 
             rvCategory.adapter = adapter
 
@@ -60,6 +64,10 @@ class CategoryFragment : Fragment() {
     private fun initObserver() {
         with(binding) {
             viewModel.data.observe(viewLifecycleOwner) { adapter.submitData(lifecycle, it) }
+            filterVM.activityType.observe(viewLifecycleOwner) {
+                tvFilter.text = it.value
+                viewModel.filter(it)
+            }
         }
     }
 
@@ -73,6 +81,6 @@ class CategoryFragment : Fragment() {
 
     private val binding: FragmentCategoryBinding by viewBinding()
     private val viewModel: CategoryViewModel by viewModel()
-    private val disposable: CompositeDisposable by inject()
+    private val filterVM: ActivityFilterVM by activityViewModels()
     private val nav: NavController by lazy { requireActivity().findNavController(R.id.nav_host_fragment_main) }
 }
