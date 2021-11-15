@@ -30,4 +30,9 @@
     <string name="label_cancel">Batal</string>
     <string name="label_activity_filter">Filter Aktivitas</string>
     <string name="label_all">Semua</string>
+    <string name="label_transaction">Transaksi</string>
+    <string name="label_date">Tanggal</string>
+    <string name="label_ammount">Nominal</string>
+    <string name="label_category">Kategori</string>
+    <string name="label_description">Keterangan</string>
 </resources>

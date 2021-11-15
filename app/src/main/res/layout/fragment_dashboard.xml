@@ -16,16 +16,18 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.nambimobile.widgets.efab.ExpandableFab
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:efab_closingAnticipateTension="0"
         app:efab_color="@color/darkGreenSecondary"
         app:efab_iconAnimationRotationDeg="-225"
-        app:efab_closingAnticipateTension="0"/>
+        tools:ignore="SpeakableTextPresentCheck" />
     <com.nambimobile.widgets.efab.FabOption
         android:id="@+id/fabIncome"
         android:layout_width="wrap_content"

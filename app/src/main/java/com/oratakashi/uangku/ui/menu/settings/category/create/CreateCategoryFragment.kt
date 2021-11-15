@@ -36,6 +36,9 @@ class CreateCategoryFragment : Fragment() {
             spnType.onClick {
                 ActivityTypePickerFragment().show(childFragmentManager, "dialog")
             }
+            etType.setEndIconOnClickListener {
+                ActivityTypePickerFragment().show(childFragmentManager, "dialog")
+            }
 
             btnSave.onClick {
                 btnSave.hideSoftKeyboard()

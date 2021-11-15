@@ -5,11 +5,14 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.oratakashi.uangku.data.db.dao.CategoryDao
+import com.oratakashi.uangku.data.db.dao.TransactionDao
 import com.oratakashi.uangku.data.model.CategoryEntity
+import com.oratakashi.uangku.data.model.TransactionEntity
 
 @Database(
     entities = [
-        CategoryEntity::class
+        CategoryEntity::class,
+        TransactionEntity::class
     ],
     version = 1,
     exportSchema = false
@@ -17,6 +20,7 @@ import com.oratakashi.uangku.data.model.CategoryEntity
 abstract class UangkuDatabase : RoomDatabase() {
 
     abstract fun category(): CategoryDao
+    abstract fun transaction(): TransactionDao
 
     companion object {
 

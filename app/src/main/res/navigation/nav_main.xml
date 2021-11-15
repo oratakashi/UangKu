@@ -9,7 +9,15 @@
         android:id="@+id/dashboardFragment"
         android:name="com.oratakashi.uangku.ui.menu.dashboard.DashboardFragment"
         android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_createTransactionFragment"
+            app:destination="@id/createTransactionFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"/>
+    </fragment>
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.oratakashi.uangku.ui.menu.history.HistoryFragment"
@@ -40,6 +48,15 @@
             app:exitAnim="@anim/anim_slide_out_left"
             app:popEnterAnim="@anim/anim_slide_in_left"
             app:popExitAnim="@anim/anim_slide_out_right"/>
+        <argument
+            android:name="isPicker"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
     <fragment
         android:id="@+id/createCategoryFragment"
@@ -49,5 +66,21 @@
         <argument
             android:name="type"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createTransactionFragment"
+        android:name="com.oratakashi.uangku.ui.menu.transaction.form.FormTransactionFragment"
+        android:label="fragment_create_transaction"
+        tools:layout="@layout/fragment_form_transaction">
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_createTransactionFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/anim_slide_in_top"
+            app:exitAnim="@anim/anim_slide_out_bottom"
+            app:popEnterAnim="@anim/anim_slide_in_top"
+            app:popExitAnim="@anim/anim_slide_out_bottom"/>
     </fragment>
 </navigation>

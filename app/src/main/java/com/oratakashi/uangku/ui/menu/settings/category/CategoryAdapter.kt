@@ -13,7 +13,8 @@ import com.oratakashi.viewbinding.core.binding.recyclerview.viewBinding
 import com.oratakashi.viewbinding.core.tools.onClick
 
 class CategoryAdapter(
-    private val onClick : (Category) -> Unit
+    private val onClick : (Category) -> Unit,
+    private val onDelete : (Category) -> Unit
 ) : PagingDataAdapter<Category, ViewHolder<AdapterCategoryBinding>>(
     DIFF_CALLBACK
 ) {
@@ -30,7 +31,8 @@ class CategoryAdapter(
                     )
                 }
                 tvName.text = it.name
-                ivDelete.onClick { onClick.invoke(it) }
+                ivDelete.onClick { onDelete.invoke(it) }
+                root.onClick { onClick.invoke(it) }
             }
         }
     }

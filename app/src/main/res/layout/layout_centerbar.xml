@@ -19,18 +19,17 @@
 
         <TextView
             android:id="@+id/tvTitle"
+            style="@style/Montserrat.Bold.Black1.18sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:text="@string/foo"
-            style="@style/Montserrat.Bold.Black1.18sp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
-            android:textAlignment="center"
-            android:maxLines="1"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:paddingHorizontal="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ivBack"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/foo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.appbar.MaterialToolbar>

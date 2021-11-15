@@ -8,4 +8,5 @@ val dbModule = module {
     single { UangkuDatabase.getAppDatabase(androidContext()) }
 
     single { get<UangkuDatabase>().category() }
+    single { get<UangkuDatabase>().transaction() }
 }
