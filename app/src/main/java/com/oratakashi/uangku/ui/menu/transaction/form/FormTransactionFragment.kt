@@ -151,10 +151,10 @@ class FormTransactionFragment : Fragment() {
             }
             viewModel.state.observe(viewLifecycleOwner) {
                 if(it) {
-                    toast("Berhasil Menambah Kategori!")
+                    toast("Berhasil Menambah Transaksi!")
                     nav.navigateUp()
                 } else {
-                    toast("Gagal Menambah Kategori!")
+                    toast("Gagal Menambah Transaksi!")
                 }
             }
         }
