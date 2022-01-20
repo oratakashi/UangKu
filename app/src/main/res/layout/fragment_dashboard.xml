@@ -25,7 +25,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:efab_closingAnticipateTension="0"
-        app:efab_color="@color/darkGreenSecondary"
+        app:efab_color="?attr/colorPrimary"
         app:efab_iconAnimationRotationDeg="-225"
         tools:ignore="SpeakableTextPresentCheck" />
     <com.nambimobile.widgets.efab.FabOption

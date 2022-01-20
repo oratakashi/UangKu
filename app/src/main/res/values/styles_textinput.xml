@@ -2,7 +2,7 @@
 <!-- When adding a new style, keep this file clean and tidy -->
 <resources>
     <!-- Only used to extend other styles -->
-    <style name="BaseTextInputLayout">
+    <style name="BaseTextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="boxBackgroundColor">@android:color/transparent</item>
@@ -17,6 +17,7 @@
         <item name="placeholderTextColor">@color/black3</item>
         <item name="helperTextTextAppearance">@style/Montserrat.Black3.12sp</item>
         <item name="helperTextTextColor">@color/black3</item>
+        <item name="expandedHintEnabled">true</item>
     </style>
 
     <!-- Only used to extend other password styles -->
@@ -37,13 +38,13 @@
     </style>
 
     <!-- Only used to extend other dropdown styles -->
-    <style name="BaseDropdownLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+    <style name="BaseDropdownLayout" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
         <item name="boxBackgroundColor">@android:color/transparent</item>
-        <item name="boxStrokeWidth">1.5dp</item>
+
         <item name="boxStrokeColor">@color/lightGreenPrimary</item>
         <item name="hintTextColor">@color/black3</item>
         <item name="errorTextAppearance">@style/Montserrat.Rose50.12sp</item>

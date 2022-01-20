@@ -8,6 +8,7 @@ import android.view.animation.TranslateAnimation
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.color.DynamicColors
 import com.oratakashi.uangku.R
 import com.oratakashi.uangku.databinding.ActivityMainBinding
 import com.oratakashi.uangku.utils.onNavDestinationSelected
@@ -15,6 +16,7 @@ import com.oratakashi.viewbinding.core.binding.activity.viewBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        DynamicColors.applyIfAvailable(this)
         super.onCreate(savedInstanceState)
         with(binding){
             setupNavigation()

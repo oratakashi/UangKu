@@ -1,6 +1,7 @@
 package com.oratakashi.uangku
 
 import android.app.Application
+import com.google.android.material.color.DynamicColors
 import com.oratakashi.uangku.di.dbModule
 import com.oratakashi.uangku.di.libModule
 import com.oratakashi.uangku.di.reqresModule
@@ -9,6 +10,7 @@ import org.koin.core.context.startKoin
 
 class App : Application() {
     override fun onCreate() {
+        DynamicColors.applyToActivitiesIfAvailable(this)
         super.onCreate()
         startKoin {
             androidContext(applicationContext)
