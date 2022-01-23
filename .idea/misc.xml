@@ -17,7 +17,9 @@
         <entry key="app/src/main/res/drawable/bg_button_red.xml" value="0.365625" />
         <entry key="app/src/main/res/drawable/bg_button_secondary.xml" value="0.21041666666666667" />
         <entry key="app/src/main/res/drawable/bg_button_secondary_disabled.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/ic_calendar.xml" value="0.365625" />
         <entry key="app/src/main/res/drawable/ic_chevron_down.xml" value="0.365625" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.365625" />
         <entry key="app/src/main/res/drawable/selector_button_primary.xml" value="0.365625" />
         <entry key="app/src/main/res/drawable/selector_button_primary_outline.xml" value="0.21041666666666667" />
         <entry key="app/src/main/res/drawable/selector_button_red.xml" value="0.365625" />
@@ -25,7 +27,7 @@
         <entry key="app/src/main/res/drawable/selector_button_secondary_text_color.xml" value="0.365625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/adapter_category.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/adapter_category.xml" value="0.33" />
         <entry key="app/src/main/res/layout/custom_primary_button.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/custom_primary_outline_button.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/custom_red_button.xml" value="0.3494791666666667" />

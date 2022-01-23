@@ -1,5 +1,6 @@
 package com.oratakashi.uangku.ui.menu.settings.category
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.color.MaterialColors
+import com.google.android.material.elevation.SurfaceColors
 import com.oratakashi.uangku.R
 import com.oratakashi.uangku.component.picker.activityfilter.ActivityFilterFragment
 import com.oratakashi.uangku.component.picker.activityfilter.ActivityFilterVM
@@ -44,6 +47,7 @@ class CategoryFragment : Fragment() {
             initObserver()
 
             searchBar.setupWithNavController(nav)
+
             fabIncome.onClick {
                 nav.navigate(
                     CategoryFragmentDirections.actionCategoryFragmentToCreateCategoryFragment(

@@ -16,7 +16,6 @@ import com.oratakashi.viewbinding.core.binding.activity.viewBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        DynamicColors.applyIfAvailable(this)
         super.onCreate(savedInstanceState)
         with(binding){
             setupNavigation()

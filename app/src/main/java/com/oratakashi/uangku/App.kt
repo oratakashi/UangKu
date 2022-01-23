@@ -10,8 +10,8 @@ import org.koin.core.context.startKoin
 
 class App : Application() {
     override fun onCreate() {
-        DynamicColors.applyToActivitiesIfAvailable(this)
         super.onCreate()
+        DynamicColors.applyToActivitiesIfAvailable(this)
         startKoin {
             androidContext(applicationContext)
             modules(listOf(

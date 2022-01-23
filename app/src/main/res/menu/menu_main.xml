@@ -5,17 +5,17 @@
         android:icon="@drawable/ic_home"
         android:title="@string/label_dashboard"
         android:checked="true"
-        android:color="@color/darkGreenPrimary"/>
+        android:color="?attr/colorOnSecondaryContainer"/>
     <item
         android:id="@+id/historyFragment"
         android:icon="@drawable/ic_history"
         android:title="@string/label_history"
         android:checked="false"
-        android:color="@color/darkGreenPrimary"/>
+        android:color="?attr/colorOnSecondaryContainer"/>
     <item
         android:id="@+id/settingsFragment"
         android:icon="@drawable/ic_setting"
         android:title="@string/label_pengaturan"
         android:checked="false"
-        android:color="@color/darkGreenPrimary"/>
+        android:color="?attr/colorOnSecondaryContainer"/>
 </menu>

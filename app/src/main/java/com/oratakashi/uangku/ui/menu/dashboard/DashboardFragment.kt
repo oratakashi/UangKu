@@ -47,36 +47,37 @@ class DashboardFragment : Fragment() {
                         onItemClick = {
                             Toast.makeText(requireContext(), it.category, Toast.LENGTH_SHORT).show()
                         },
-                        transactionItems = listOf(
-                            TransactionData(
-                                total = 10000000,
-                                category = "Makanan",
-                                color = TransactionCardColor.GREEN,
-                                date = "17 Oktober 2021",
-                                description = "KFC"
-                            ),
-                            TransactionData(
-                                total = 500000,
-                                category = "Reksa dana",
-                                color = TransactionCardColor.RED,
-                                date = "18 Oktober 2021",
-                                description = "Sucor"
-                            ),
-                            TransactionData(
-                                total = 250000,
-                                category = "Kebutuhan Harian",
-                                color = TransactionCardColor.CYAN,
-                                date = "19 Oktober 2021",
-                                description = "Skincare"
-                            ),
-                            TransactionData(
-                                total = 1000000,
-                                category = "Diamond Mobile Legend",
-                                color = TransactionCardColor.BLUE,
-                                date = "20 Oktober 2021",
-                                description = "Skin legend badang"
-                            ),
-                        )
+                        transactionItems = emptyList()
+//                        transactionItems = listOf(
+//                            TransactionData(
+//                                total = 10000000,
+//                                category = "Makanan",
+//                                color = TransactionCardColor.GREEN,
+//                                date = "17 Oktober 2021",
+//                                description = "KFC"
+//                            ),
+//                            TransactionData(
+//                                total = 500000,
+//                                category = "Reksa dana",
+//                                color = TransactionCardColor.RED,
+//                                date = "18 Oktober 2021",
+//                                description = "Sucor"
+//                            ),
+//                            TransactionData(
+//                                total = 250000,
+//                                category = "Kebutuhan Harian",
+//                                color = TransactionCardColor.CYAN,
+//                                date = "19 Oktober 2021",
+//                                description = "Skincare"
+//                            ),
+//                            TransactionData(
+//                                total = 1000000,
+//                                category = "Diamond Mobile Legend",
+//                                color = TransactionCardColor.BLUE,
+//                                date = "20 Oktober 2021",
+//                                description = "Skin legend badang"
+//                            ),
+//                        )
                     )
                 }
             }

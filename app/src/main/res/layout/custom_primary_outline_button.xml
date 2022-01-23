@@ -11,6 +11,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnText"
         style="@style/Montserrat.SemiBold.Green50.14sp"
+        android:textColor="?attr/colorSecondary"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:textFontWeight="500"
