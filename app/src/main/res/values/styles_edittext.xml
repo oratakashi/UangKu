@@ -2,12 +2,16 @@
 <!-- When adding a new style, keep this file clean and tidy -->
 <resources>
     <!-- Only used to extend other styles -->
-    <style name="BaseTextInputEditText">
+    <style name="BaseTextInputEditText" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">33dp</item>
-        <item name="android:fontFamily">@font/montserrat_regular</item>
-        <item name="background">@drawable/bg_edittext</item>
+        <item name="hintTextAppearance">?attr/bodySmallRegular</item>
+        <item name="placeholderTextAppearance">?attr/bodySmallRegular</item>
+        <item name="android:textAppearance">?attr/bodySmallRegular</item>
+<!--        <item name="android:textColor">@color/color_textinput_text</item>-->
+        <item name="android:drawablePadding">@dimen/dimen_8dp</item>
+<!--        <item name="android:textColorHint">?attr/black_50</item>-->
+<!--        <item name="android:fontFamily">@font/montserrat_regular</item>-->
     </style>
 
     <style name="BaseTextInputEditText.OneLine">
@@ -18,6 +22,11 @@
     <style name="BaseTextInputEditText.OneLine.Disabled">
         <item name="maxLines">1</item>
         <item name="android:inputType">none</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:longClickable">false</item>
     </style>
 
     <style name="BaseTextInputEditText.MultiLine">

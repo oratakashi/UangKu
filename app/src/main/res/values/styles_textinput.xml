@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- When adding a new style, keep this file clean and tidy -->
 <resources>
     <!-- Only used to extend other styles -->
-    <style name="BaseTextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="boxBackgroundColor">@android:color/transparent</item>
-        <item name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
-        <item name="android:textColorHint">@color/black3</item>
-        <item name="boxStrokeColor">@color/lightGreenPrimary</item>
-        <item name="hintTextColor">@color/lightGreenPrimary</item>
-        <item name="errorTextAppearance">@style/Montserrat.Rose50.12sp</item>
-        <item name="hintTextAppearance">@style/Montserrat.DarkBluePrimary.14sp</item>
-        <item name="placeholderTextAppearance">@style/Montserrat.Black1.16sp</item>
-        <item name="placeholderTextColor">@color/black3</item>
-        <item name="helperTextTextAppearance">@style/Montserrat.Black3.12sp</item>
-        <item name="helperTextTextColor">@color/black3</item>
-        <item name="expandedHintEnabled">true</item>
+    <style name="BaseTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_marginStart">?attr/spacing4</item>
+        <item name="android:layout_marginEnd">?attr/spacing4</item>
+        <item name="boxStrokeErrorColor">?attr/colorError</item>
+        <item name="boxBackgroundColor">@color/color_textinput_box</item>
+        <item name="errorTextAppearance">?attr/bodySmallRegular</item>
+        <item name="placeholderTextAppearance">?attr/bodySmallSemiBold</item>
+        <item name="android:textAppearance">?attr/bodySmallSemiBold</item>
+        <item name="helperTextTextAppearance">?attr/captionSmallRegular</item>
+        <item name="suffixTextAppearance">?attr/bodySmallSemiBold</item>
+        <item name="prefixTextAppearance">?attr/bodySmallSemiBold</item>
+        <item name="boxCornerRadiusBottomEnd">?attr/radius5</item>
+        <item name="boxCornerRadiusBottomStart">?attr/radius5</item>
+        <item name="boxCornerRadiusTopEnd">?attr/radius5</item>
+        <item name="boxCornerRadiusTopStart">?attr/radius5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
     </style>
 
     <!-- Only used to extend other password styles -->
@@ -32,81 +31,35 @@
 
     <!-- Only used to extend other password styles -->
     <style name="BaseTextInputLayout.Calendar">
+        <item name="boxBackgroundColor">@color/color_textinput_box_calendar</item>
         <item name="errorIconDrawable">@null</item>
         <item name="endIconDrawable">@drawable/ic_calendar</item>
         <item name="endIconMode">custom</item>
     </style>
 
+    <style name="BaseTextInputLayout.TimePicker">
+        <item name="errorIconDrawable">@null</item>
+<!--        <item name="endIconDrawable">@drawable/ic_clock</item>-->
+        <item name="endIconMode">custom</item>
+    </style>
+
+    <style name="BaseTextInputLayout.Search">
+        <item name="errorIconDrawable">@null</item>
+<!--        <item name="startIconDrawable">@drawable/ic_search</item>-->
+    </style>
+
     <!-- Only used to extend other dropdown styles -->
-    <style name="BaseDropdownLayout" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
+    <style name="BaseDropdownLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">16dp</item>
-        <item name="android:layout_marginEnd">16dp</item>
-        <item name="boxBackgroundColor">@android:color/transparent</item>
-
-        <item name="boxStrokeColor">@color/lightGreenPrimary</item>
-        <item name="hintTextColor">@color/black3</item>
-        <item name="errorTextAppearance">@style/Montserrat.Rose50.12sp</item>
-        <item name="hintTextAppearance">@style/Montserrat.Black3.14sp</item>
-        <item name="placeholderTextAppearance">@style/Montserrat.Black1.16sp</item>
-        <item name="placeholderTextColor">@color/black3</item>
+        <item name="android:layout_marginStart">?attr/spacing4</item>
+        <item name="android:layout_marginEnd">?attr/spacing4</item>
+        <item name="boxBackgroundColor">@color/color_textinput_box</item>
         <item name="endIconDrawable">@drawable/ic_chevron_down</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Expand">
-        <item name="expandedHintEnabled">false</item>
-    </style>
-
-    <!-- Only used as first TextInputLayout on the form, otherwise use the Default one-->
-    <style name="BaseTextInputLayout.First">
-        <item name="android:layout_marginTop">24dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Expand.First">
-        <item name="android:layout_marginTop">16dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Default">
-        <item name="android:layout_marginTop">98dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Expand.Default">
-        <item name="android:layout_marginTop">98dp</item>
-    </style>
-
-    <!-- Only used as first TextInputLayout on the form, otherwise use the Default one-->
-    <style name="BaseTextInputLayout.Password.First">
-        <item name="android:layout_marginTop">16dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Password.Default">
-        <item name="android:layout_marginTop">98dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Password.Expand.First">
-        <item name="android:layout_marginTop">16dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Password.Expand.Default">
-        <item name="android:layout_marginTop">98dp</item>
-    </style>
-
-    <!-- Only used as first TextInputLayout on the form, otherwise use the Default one-->
-    <style name="BaseTextInputLayout.Calendar.First">
-        <item name="android:layout_marginTop">16dp</item>
-    </style>
-
-    <style name="BaseTextInputLayout.Calendar.Default">
-        <item name="android:layout_marginTop">98dp</item>
-    </style>
-
-    <!-- Only used as first TextInputLayout on the form, otherwise use the Default one-->
-    <style name="BaseDropdownLayout.First">
-        <item name="android:layout_marginTop">16dp</item>
-    </style>
-
-    <style name="BaseDropdownLayout.Default">
-        <item name="android:layout_marginTop">98dp</item>
+        <item name="errorTextAppearance">?attr/bodySmallRegular</item>
+        <item name="hintTextAppearance">?attr/bodySmallRegular</item>
+        <item name="placeholderTextAppearance">?attr/bodySmallSemiBold</item>
+        <item name="android:textAppearance">?attr/bodySmallSemiBold</item>
+        <item name="expandedHintEnabled">true</item>
     </style>
 </resources>

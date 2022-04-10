@@ -17,7 +17,6 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        style="@style/Montserrat.Black2.14sp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"

@@ -29,58 +29,61 @@ class CreateCategoryFragment : Fragment() {
         with(binding) {
             initObserver()
 
-            toolbar.setupWithNavController(nav)
+//            toolbar.setupWithNavController(nav)
 
-            etType.editText?.setText(args.type)
+//            etType.editText?.setText(args.type)
 
-            spnType.onClick {
-                ActivityTypePickerFragment().show(childFragmentManager, "dialog")
-            }
-            etType.setEndIconOnClickListener {
-                ActivityTypePickerFragment().show(childFragmentManager, "dialog")
-            }
+//            spnType.onClick {
+//                ActivityTypePickerFragment().show(childFragmentManager, "dialog")
+//            }
+//            etType.setEndIconOnClickListener {
+//                ActivityTypePickerFragment().show(childFragmentManager, "dialog")
+//            }
 
-            btnSave.onClick {
-                btnSave.hideSoftKeyboard()
-                when {
-                    etName.editText?.text.toString().isEmpty() -> {
-                        etName.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Nama Kategori"
-                        )
-                    }
-                    etType.editText?.text.toString().isEmpty() -> {
-                        etType.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Jenis"
-                        )
-                    }
-                    else -> {
-                        viewModel.addCategory(
-                            Category(
-                                etName.editText?.text.toString(),
-                                etType.editText?.text.toString()
-                            )
-                        )
-                    }
-                }
-            }
+//            btnSave.onClick {
+//                btnSave.hideSoftKeyboard()
+//                when {
+//                    etName.editText?.text.toString().isEmpty() -> {
+//                        etName.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Nama Kategori"
+//                        )
+//                    }
+//                    etType.editText?.text.toString().isEmpty() -> {
+//                        etType.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Jenis"
+//                        )
+//                    }
+//                    else -> {
+//                        viewModel.addCategory(
+//                            Category(
+//                                etName.editText?.text.toString(),
+//                                etType.editText?.text.toString()
+//                            )
+//                        )
+//                    }
+//                }
+//            }
         }
     }
 
     private fun initObserver() {
         with(binding) {
-            pickerVM.activityType.observe(viewLifecycleOwner) {
-                when (it) {
-                    ActivityType.EXPANSE -> {
-                        etType.editText?.setText(ActivityType.EXPANSE.value)
-                    }
-                    ActivityType.INCOME -> {
-                        etType.editText?.setText(ActivityType.INCOME.value)
-                    }
-                    else -> throw IllegalArgumentException()
-                }
-            }
+//            pickerVM.activityType.observe(viewLifecycleOwner) {
+//                when (it) {
+//                    ActivityType.EXPANSE -> {
+//                        etType.editText?.setText(ActivityType.EXPANSE.value)
+//                    }
+//                    ActivityType.INCOME -> {
+//                        etType.editText?.setText(ActivityType.INCOME.value)
+//                    }
+//                    ActivityType.DEFAULT -> {
+//                        etType.editText?.setText(args.type)
+//                    }
+//                    else -> throw IllegalArgumentException()
+//                }
+//            }
             viewModel.state.observe(viewLifecycleOwner) {
                 if(it) {
                     toast("Berhasil Menambah Kategori!")
@@ -98,6 +101,11 @@ class CreateCategoryFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    override fun onDetach() {
+        pickerVM.clear()
+        super.onDetach()
     }
 
     private val binding: FragmentCreateCategoryBinding by viewBinding()

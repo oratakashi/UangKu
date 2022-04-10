@@ -18,7 +18,6 @@
             android:layout_height="match_parent">
 
             <TextView
-                style="@style/Montserrat.Bold.Black1.24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/label_pengaturan"
@@ -57,7 +56,6 @@
 
             <TextView
                 android:id="@+id/textView3"
-                style="@style/Montserrat.Medium.Black3.14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

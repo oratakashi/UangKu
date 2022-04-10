@@ -19,11 +19,11 @@ class DeleteDialogFragment(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
-            btnCancel.onClick { dismiss() }
-            btnDelete.onClick {
-                onDelete.invoke()
-                dismiss()
-            }
+//            btnCancel.onClick { dismiss() }
+//            btnDelete.onClick {
+//                onDelete.invoke()
+//                dismiss()
+//            }
 
             tvMessage.text = String.format(
                 getString(R.string.placeholder_delete_message),

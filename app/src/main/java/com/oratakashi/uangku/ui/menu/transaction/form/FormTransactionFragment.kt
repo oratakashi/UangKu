@@ -33,111 +33,111 @@ class FormTransactionFragment : Fragment() {
         with(binding) {
             initObserver()
 
-            when(args.type) {
-                ActivityType.INCOME.value   -> {
-                    type = ActivityType.INCOME
-                    rbIncome.isChecked = true
-                }
-                ActivityType.EXPANSE.value   -> {
-                    type = ActivityType.EXPANSE
-                    rbExpanse.isChecked = true
-                }
-            }
+//            when(args.type) {
+//                ActivityType.INCOME.value   -> {
+//                    type = ActivityType.INCOME
+//                    rbIncome.isChecked = true
+//                }
+//                ActivityType.EXPANSE.value   -> {
+//                    type = ActivityType.EXPANSE
+//                    rbExpanse.isChecked = true
+//                }
+//            }
+//
+//            toolbar.setupWithNavController(nav)
+//            etCalendar.apply {
+//                setEndIconOnClickListener { showDatePickerActivity(this, requireActivity(), false) }
+//                editText?.onClick { showDatePickerActivity(this, requireActivity(), false) }
+//                editText?.setText(Date().toStringDate(ConverterDate.FULL_DATE))
+//            }
+//            etCategory.apply {
+//                setEndIconOnClickListener {
+//                    hideSoftKeyboard()
+//                    viewModel.saveTmpForm(
+//                        etCalendar.editText?.text.toString(),
+//                        etAmmount.editText?.text.toString(),
+//                        etNote.editText?.text.toString()
+//                    )
+//                    nav.navigate(
+//                        FormTransactionFragmentDirections.actionCreateTransactionFragmentToCategoryFragment(
+//                            isPicker = true,
+//                            type = type.value
+//                        )
+//                    )
+//                }
+//                editText?.setOnClickListener {
+//                    hideSoftKeyboard()
+//                    viewModel.saveTmpForm(
+//                        etCalendar.editText?.text.toString(),
+//                        etAmmount.editText?.text.toString(),
+//                        etNote.editText?.text.toString()
+//                    )
+//                    nav.navigate(
+//                        FormTransactionFragmentDirections.actionCreateTransactionFragmentToCategoryFragment(
+//                            isPicker = true,
+//                            type = type.value
+//                        )
+//                    )
+//                }
+//            }
+//            etAmmount.addCurrencyTextWatcher()
+//
+//            rgType.setOnCheckedChangeListener { _, checkedId ->
+//                etCategory.editText?.setText("")
+//                categoryPicker.clear()
+//                when(checkedId){
+//                    R.id.rbIncome   -> {
+//                        type = ActivityType.INCOME
+//                    }
+//                    R.id.rbExpanse  -> {
+//                        type = ActivityType.EXPANSE
+//                    }
+//                }
+//            }
 
-            toolbar.setupWithNavController(nav)
-            etCalendar.apply {
-                setEndIconOnClickListener { showDatePickerActivity(this, requireActivity(), false) }
-                editText?.onClick { showDatePickerActivity(this, requireActivity(), false) }
-                editText?.setText(Date().toStringDate(ConverterDate.FULL_DATE))
-            }
-            etCategory.apply {
-                setEndIconOnClickListener {
-                    hideSoftKeyboard()
-                    viewModel.saveTmpForm(
-                        etCalendar.editText?.text.toString(),
-                        etAmmount.editText?.text.toString(),
-                        etNote.editText?.text.toString()
-                    )
-                    nav.navigate(
-                        FormTransactionFragmentDirections.actionCreateTransactionFragmentToCategoryFragment(
-                            isPicker = true,
-                            type = type.value
-                        )
-                    )
-                }
-                editText?.setOnClickListener {
-                    hideSoftKeyboard()
-                    viewModel.saveTmpForm(
-                        etCalendar.editText?.text.toString(),
-                        etAmmount.editText?.text.toString(),
-                        etNote.editText?.text.toString()
-                    )
-                    nav.navigate(
-                        FormTransactionFragmentDirections.actionCreateTransactionFragmentToCategoryFragment(
-                            isPicker = true,
-                            type = type.value
-                        )
-                    )
-                }
-            }
-            etAmmount.addCurrencyTextWatcher()
-
-            rgType.setOnCheckedChangeListener { _, checkedId ->
-                etCategory.editText?.setText("")
-                categoryPicker.clear()
-                when(checkedId){
-                    R.id.rbIncome   -> {
-                        type = ActivityType.INCOME
-                    }
-                    R.id.rbExpanse  -> {
-                        type = ActivityType.EXPANSE
-                    }
-                }
-            }
-
-            btnSave.setOnClickListener {
-                it.hideSoftKeyboard()
-                when {
-                    etCalendar.editText?.text.toString().isEmpty() -> {
-                        etCalendar.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Tanggal"
-                        )
-                    }
-                    etAmmount.editText?.text.toString().isEmpty() -> {
-                        etAmmount.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Nominal"
-                        )
-                    }
-                    etNote.editText?.text.toString().isEmpty() -> {
-                        etNote.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Keterangan"
-                        )
-                    }
-                    etCategory.editText?.text.toString().isEmpty() && category != null -> {
-                        etCategory.error = String.format(
-                            getString(R.string.placeholder_error_empty),
-                            "Kategori"
-                        )
-                    }
-                    else -> {
-                        viewModel.addTransaction(
-                            Transaction(
-                                etCalendar.editText?.text.toString().convertDate(
-                                    ConverterDate.FULL_DATE,
-                                    ConverterDate.SQL_DATE
-                                ),
-                                etAmmount.editText?.text.toString().replace("." ,"").toLong(),
-                                etNote.editText?.text.toString(),
-                                type.value,
-                                category?.id.orEmpty()
-                            )
-                        )
-                    }
-                }
-            }
+//            btnSave.setOnClickListener {
+//                it.hideSoftKeyboard()
+//                when {
+//                    etCalendar.editText?.text.toString().isEmpty() -> {
+//                        etCalendar.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Tanggal"
+//                        )
+//                    }
+//                    etAmmount.editText?.text.toString().isEmpty() -> {
+//                        etAmmount.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Nominal"
+//                        )
+//                    }
+//                    etNote.editText?.text.toString().isEmpty() -> {
+//                        etNote.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Keterangan"
+//                        )
+//                    }
+//                    etCategory.editText?.text.toString().isEmpty() && category != null -> {
+//                        etCategory.error = String.format(
+//                            getString(R.string.placeholder_error_empty),
+//                            "Kategori"
+//                        )
+//                    }
+//                    else -> {
+//                        viewModel.addTransaction(
+//                            Transaction(
+//                                etCalendar.editText?.text.toString().convertDate(
+//                                    ConverterDate.FULL_DATE,
+//                                    ConverterDate.SQL_DATE
+//                                ),
+//                                etAmmount.editText?.text.toString().replace("." ,"").toLong(),
+//                                etNote.editText?.text.toString(),
+//                                type.value,
+//                                category?.id.orEmpty()
+//                            )
+//                        )
+//                    }
+//                }
+//            }
         }
     }
 
@@ -146,7 +146,7 @@ class FormTransactionFragment : Fragment() {
             categoryPicker.category.observe(viewLifecycleOwner) {
                 it?.let {
                     category = it
-                    etCategory.editText?.setText(it.name)
+//                    etCategory.editText?.setText(it.name)
                 }
             }
             viewModel.state.observe(viewLifecycleOwner) {
@@ -163,11 +163,11 @@ class FormTransactionFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         with(binding) {
-            if(viewModel.date.isNotEmpty()) {
-                etCalendar.editText?.setText(viewModel.date)
-            }
-            etAmmount.editText?.setText(viewModel.ammount)
-            etNote.editText?.setText(viewModel.description)
+//            if(viewModel.date.isNotEmpty()) {
+//                etCalendar.editText?.setText(viewModel.date)
+//            }
+//            etAmmount.editText?.setText(viewModel.ammount)
+//            etNote.editText?.setText(viewModel.description)
         }
     }
 

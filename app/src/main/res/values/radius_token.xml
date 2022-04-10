@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="radius0" format="reference"/>
+    <attr name="radius2" format="reference"/>
+    <attr name="radius3" format="reference"/>
+    <attr name="radius4" format="reference"/>
+    <attr name="radius5" format="reference"/>
+    <attr name="radius6" format="reference"/>
+    <attr name="radius7" format="reference"/>
+    <attr name="radius8" format="reference"/>
+    <attr name="radius9" format="reference"/>
+</resources>

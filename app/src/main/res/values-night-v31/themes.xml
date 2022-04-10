@@ -1,36 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.UangKu" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/material_dynamic_primary40</item>
-        <item name="colorOnPrimary">@color/material_dynamic_primary100</item>
-        <item name="colorPrimaryContainer">@color/material_dynamic_primary90</item>
-        <item name="colorOnPrimaryContainer">@color/material_dynamic_primary10</item>
-        <item name="colorSecondary">@color/material_dynamic_secondary40</item>
-        <item name="colorOnSecondary">@color/material_dynamic_secondary100</item>
-        <item name="colorSecondaryContainer">@color/material_dynamic_secondary90</item>
-        <item name="colorOnSecondaryContainer">@color/material_dynamic_secondary10</item>
-        <item name="colorTertiary">@color/material_dynamic_tertiary40</item>
-        <item name="colorOnTertiary">@color/material_dynamic_tertiary100</item>
-        <item name="colorTertiaryContainer">@color/material_dynamic_tertiary90</item>
-        <item name="colorOnTertiaryContainer">@color/material_dynamic_tertiary10</item>
-        <item name="colorError">@color/md_theme_light_error</item>
-        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
-        <item name="colorOnError">@color/md_theme_light_onError</item>
-        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
-        <item name="android:colorBackground">@color/material_dynamic_neutral_variant99</item>
-        <item name="colorOnBackground">@color/material_dynamic_neutral_variant10</item>
-        <item name="colorSurface">@color/material_dynamic_neutral_variant99</item>
-        <item name="colorOnSurface">@color/material_dynamic_neutral_variant10</item>
-        <item name="colorSurfaceVariant">@color/material_dynamic_neutral_variant90</item>
-        <item name="colorOnSurfaceVariant">@color/material_dynamic_neutral_variant30</item>
-        <item name="colorOutline">@color/material_dynamic_neutral_variant50</item>
-        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
-        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
-        <item name="colorPrimaryInverse">@color/md_theme_light_primaryInverse</item>
+    <style name="Theme.UangKu" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:ambientShadowAlpha">0.036</item>
+        <item name="android:spotShadowAlpha">0.036</item>
+        <!-- Radius -->
+        <item name="radius0">@dimen/dimen_0dp</item>
+        <item name="radius2">@dimen/dimen_2dp</item>
+        <item name="radius3">@dimen/dimen_4dp</item>
+        <item name="radius4">@dimen/dimen_6dp</item>
+        <item name="radius5">@dimen/dimen_8dp</item>
+        <item name="radius6">@dimen/dimen_12dp</item>
+        <item name="radius7">@dimen/dimen_16dp</item>
+        <item name="radius8">@dimen/dimen_24dp</item>
+        <item name="radius9">@dimen/dimen_30dp</item>
+        <!-- Shape -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.LargeComponent</item>
+        <!-- Spacing -->
+        <item name="spacingNone">@dimen/dimen_0dp</item>
+        <item name="spacing0">@dimen/dimen_1dp</item>
+        <item name="spacing1">@dimen/dimen_4dp</item>
+        <item name="spacing2">@dimen/dimen_8dp</item>
+        <item name="spacing3">@dimen/dimen_12dp</item>
+        <item name="spacing4">@dimen/dimen_16dp</item>
+        <item name="spacing5">@dimen/dimen_20dp</item>
+        <item name="spacing6">@dimen/dimen_24dp</item>
+        <item name="spacing7">@dimen/dimen_28dp</item>
+        <item name="spacing8">@dimen/dimen_32dp</item>
+        <item name="spacing9">@dimen/dimen_36dp</item>
+        <item name="spacing10">@dimen/dimen_40dp</item>
+        <item name="spacing11">@dimen/dimen_48dp</item>
+        <item name="spacing12">@dimen/dimen_56dp</item>
+        <item name="spacing13">@dimen/dimen_64dp</item>
+        <item name="spacing14">@dimen/dimen_80dp</item>
+        <item name="spacing15">@dimen/dimen_96dp</item>
+        <item name="spacing16">@dimen/dimen_112dp</item>
+        <item name="spacing17">@dimen/dimen_128dp</item>
+        <item name="spacing18">@dimen/dimen_144dp</item>
+        <item name="spacing19">@dimen/dimen_160dp</item>
+        <item name="spacing20">@dimen/dimen_176dp</item>
+        <item name="spacing21">@dimen/dimen_192dp</item>
+        <item name="spacing22">@dimen/dimen_208dp</item>
+        <item name="spacing23">@dimen/dimen_224dp</item>
+        <item name="spacing24">@dimen/dimen_240dp</item>
+        <item name="spacing25">@dimen/dimen_256dp</item>
+        <item name="spacing26">@dimen/dimen_288dp</item>
+        <item name="spacing27">@dimen/dimen_320dp</item>
+        <item name="spacing28">@dimen/dimen_384dp</item>
+        <!-- Shadow -->
+        <item name="shadow1dp">@dimen/dimen_1dp</item>
+        <item name="shadow2dp">@dimen/dimen_2dp</item>
+        <item name="shadow4dp">@dimen/dimen_4dp</item>
+        <item name="shadow8dp">@dimen/dimen_8dp</item>
+        <item name="shadow16dp">@dimen/dimen_16dp</item>
+        <!-- Typography -->
+        <item name="heading1">@style/Heading1</item>
+        <item name="heading2">@style/Heading2</item>
+        <item name="heading3">@style/Heading3</item>
+        <item name="heading4">@style/Heading4</item>
+        <item name="heading5">@style/Heading5</item>
+        <item name="heading6">@style/Heading6</item>
+        <item name="bodyLargeRegular">@style/BodyLargeRegular</item>
+        <item name="bodyLargeMedium">@style/BodyLargeMedium</item>
+        <item name="bodyLargeSemiBold">@style/BodyLargeSemiBold</item>
+        <item name="bodyLargeBold">@style/BodyLargeBold</item>
+        <item name="bodySmallRegular">@style/BodySmallRegular</item>
+        <item name="bodySmallMedium">@style/BodySmallMedium</item>
+        <item name="bodySmallSemiBold">@style/BodySmallSemiBold</item>
+        <item name="bodySmallBold">@style/BodySmallBold</item>
+        <item name="captionLargeRegular">@style/CaptionLargeRegular</item>
+        <item name="captionLargeSemiBold">@style/CaptionLargeSemiBold</item>
+        <item name="captionLargeBold">@style/CaptionLargeBold</item>
+        <item name="captionSmallRegular">@style/CaptionSmallRegular</item>
+        <item name="captionSmallSemiBold">@style/CaptionSmallSemiBold</item>
+        <item name="captionSmallBold">@style/CaptionSmallBold</item>
+
+        <item name="colorPrimary">@color/material_dynamic_primary80</item>
+        <item name="colorOnPrimary">@color/material_dynamic_primary20</item>
+        <item name="colorPrimaryContainer">@color/material_dynamic_primary30</item>
+        <item name="colorOnPrimaryContainer">@color/material_dynamic_primary90</item>
+        <item name="colorSecondary">@color/material_dynamic_secondary80</item>
+        <item name="colorOnSecondary">@color/material_dynamic_secondary20</item>
+        <item name="colorSecondaryContainer">@color/material_dynamic_secondary30</item>
+        <item name="colorOnSecondaryContainer">@color/material_dynamic_secondary90</item>
+        <item name="colorTertiary">@color/material_dynamic_tertiary80</item>
+        <item name="colorOnTertiary">@color/material_dynamic_tertiary20</item>
+        <item name="colorTertiaryContainer">@color/material_dynamic_tertiary30</item>
+        <item name="colorOnTertiaryContainer">@color/material_dynamic_tertiary90</item>
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        <item name="android:colorBackground">@color/material_dynamic_neutral_variant10</item>
+        <item name="colorOnBackground">@color/material_dynamic_neutral_variant90</item>
+        <item name="colorSurface">@color/material_dynamic_neutral_variant10</item>
+        <item name="colorOnSurface">@color/material_dynamic_neutral_variant90</item>
+        <item name="colorSurfaceVariant">@color/material_dynamic_neutral_variant30</item>
+        <item name="colorOnSurfaceVariant">@color/material_dynamic_neutral_variant80</item>
+        <item name="colorOutline">@color/material_dynamic_neutral_variant60</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_primaryInverse</item>
+        <item name="colorDisabled">@color/transparentGrey</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSurface</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowLightStatusBar">true</item>
+<!--        <item name="android:windowLightStatusBar">true</item>-->
         <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
     </style>
 </resources>

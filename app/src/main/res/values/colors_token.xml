@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme Color Section -->
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryVariant2" format="color" />
+    <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondaryVariant2" format="color" />
+    <attr name="colorSecondaryVariant3" format="color" />
+    <attr name="colorSecondaryVariant4" format="color" />
+    <attr name="colorDisabled" format="color" />
+    <attr name="colorDisabledVariant" format="color" />
+    <!-- End Theme Color Section -->
+
+    <!--  Grayscale Section  -->
+    <attr name="black_100" format="color"/>
+    <attr name="black_90" format="color"/>
+    <attr name="black_80" format="color"/>
+    <attr name="black_70" format="color"/>
+    <attr name="black_60" format="color"/>
+    <attr name="black_50" format="color"/>
+    <attr name="black_40" format="color"/>
+    <attr name="black_30" format="color"/>
+    <attr name="black_20" format="color"/>
+    <attr name="black_10" format="color"/>
+    <attr name="white" format="color"/>
+    <attr name="black_font" format="color"/>
+    <!--  End Grayscale Section  -->
+
+    <!--  Error Section  -->
+    <attr name="error_pressed" format="color"/>
+    <attr name="error_hover" format="color"/>
+    <attr name="error_normal" format="color"/>
+    <attr name="error_40" format="color"/>
+    <attr name="error_30" format="color"/>
+    <attr name="error_20" format="color"/>
+    <attr name="error_10" format="color"/>
+    <!--  End Error Section  -->
+
+    <!--  Warning Section  -->
+    <attr name="warning_pressed" format="color"/>
+    <attr name="warning_hover" format="color"/>
+    <attr name="warning_normal" format="color"/>
+    <attr name="warning_40" format="color"/>
+    <attr name="warning_30" format="color"/>
+    <attr name="warning_20" format="color"/>
+    <attr name="warning_10" format="color"/>
+    <!--  End Warning Section  -->
+
+    <!--  Success Section  -->
+    <attr name="success_pressed" format="color"/>
+    <attr name="success_hover" format="color"/>
+    <attr name="success_normal" format="color"/>
+    <attr name="success_40" format="color"/>
+    <attr name="success_30" format="color"/>
+    <attr name="success_20" format="color"/>
+    <attr name="success_10" format="color"/>
+    <!--  End Success Section  -->
+
+    <!--  Info Section  -->
+    <attr name="info_pressed" format="color"/>
+    <attr name="info_hover" format="color"/>
+    <attr name="info_normal" format="color"/>
+    <attr name="info_40" format="color"/>
+    <attr name="info_30" format="color"/>
+    <attr name="info_20" format="color"/>
+    <attr name="info_10" format="color"/>
+    <!--  End Info Section  -->
+
+    <!--  Primary Section  -->
+    <attr name="primary_pressed" format="color"/>
+    <attr name="primary_hover" format="color"/>
+    <attr name="primary_normal" format="color"/>
+    <attr name="primary_40" format="color"/>
+    <attr name="primary_30" format="color"/>
+    <attr name="primary_20" format="color"/>
+    <attr name="primary_10" format="color"/>
+    <!--  End Primary Section  -->
+
+    <!--  Secondary Suite Section  -->
+    <attr name="secondary_suite_pressed" format="color"/>
+    <attr name="secondary_suite_hover" format="color"/>
+    <attr name="secondary_suite_normal" format="color"/>
+    <attr name="secondary_suite_40" format="color"/>
+    <attr name="secondary_suite_30" format="color"/>
+    <attr name="secondary_suite_20" format="color"/>
+    <attr name="secondary_suite_10" format="color"/>
+    <!--  End Secondary Suite Section  -->
+
+    <!--  Secondary Mart Section  -->
+    <attr name="secondary_mart_pressed" format="color"/>
+    <attr name="secondary_mart_hover" format="color"/>
+    <attr name="secondary_mart_normal" format="color"/>
+    <attr name="secondary_mart_40" format="color"/>
+    <attr name="secondary_mart_30" format="color"/>
+    <attr name="secondary_mart_20" format="color"/>
+    <attr name="secondary_mart_10" format="color"/>
+    <!--  End Secondary Mart Section  -->
+
+    <!--  Primary Fisheries Section  -->
+    <attr name="primary_fisheries_pressed" format="color"/>
+    <attr name="primary_fisheries_hover" format="color"/>
+    <attr name="primary_fisheries_normal" format="color"/>
+    <attr name="primary_fisheries_40" format="color"/>
+    <attr name="primary_fisheries_30" format="color"/>
+    <attr name="primary_fisheries_20" format="color"/>
+    <attr name="primary_fisheries_10" format="color"/>
+    <!--  End Primary Fisheries Section  -->
+
+    <!--  Secondary Fisheries Section  -->
+    <attr name="secondary_fisheries_pressed" format="color"/>
+    <attr name="secondary_fisheries_hover" format="color"/>
+    <attr name="secondary_fisheries_normal" format="color"/>
+    <attr name="secondary_fisheries_40" format="color"/>
+    <attr name="secondary_fisheries_30" format="color"/>
+    <attr name="secondary_fisheries_20" format="color"/>
+    <attr name="secondary_fisheries_10" format="color"/>
+    <!--  End Secondary Fisheries Section  -->
+
+    <!--  Primary LiveStock Section  -->
+    <attr name="primary_livestock_pressed" format="color"/>
+    <attr name="primary_livestock_hover" format="color"/>
+    <attr name="primary_livestock_normal" format="color"/>
+    <attr name="primary_livestock_40" format="color"/>
+    <attr name="primary_livestock_30" format="color"/>
+    <attr name="primary_livestock_20" format="color"/>
+    <attr name="primary_livestock_10" format="color"/>
+    <!--  End Primary LiveStock Section  -->
+
+    <!--  Secondary Poultry Section  -->
+    <attr name="secondary_poultry_pressed" format="color"/>
+    <attr name="secondary_poultry_hover" format="color"/>
+    <attr name="secondary_poultry_normal" format="color"/>
+    <attr name="secondary_poultry_40" format="color"/>
+    <attr name="secondary_poultry_30" format="color"/>
+    <attr name="secondary_poultry_20" format="color"/>
+    <attr name="secondary_poultry_10" format="color"/>
+    <!--  End Secondary Poultry Section  -->
+
+    <!--  Secondary Ruminants Section  -->
+    <attr name="secondary_ruminants_pressed" format="color"/>
+    <attr name="secondary_ruminants_hover" format="color"/>
+    <attr name="secondary_ruminants_normal" format="color"/>
+    <attr name="secondary_ruminants_40" format="color"/>
+    <attr name="secondary_ruminants_30" format="color"/>
+    <attr name="secondary_ruminants_20" format="color"/>
+    <attr name="secondary_ruminants_10" format="color"/>
+    <!--  End Secondary Mart Section  -->
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="spacingNone" format="reference"/>
+    <attr name="spacing0" format="reference"/>
+    <attr name="spacing1" format="reference"/>
+    <attr name="spacing2" format="reference"/>
+    <attr name="spacing3" format="reference"/>
+    <attr name="spacing4" format="reference"/>
+    <attr name="spacing5" format="reference"/>
+    <attr name="spacing6" format="reference"/>
+    <attr name="spacing7" format="reference"/>
+    <attr name="spacing8" format="reference"/>
+    <attr name="spacing9" format="reference"/>
+    <attr name="spacing10" format="reference"/>
+    <attr name="spacing11" format="reference"/>
+    <attr name="spacing12" format="reference"/>
+    <attr name="spacing13" format="reference"/>
+    <attr name="spacing14" format="reference"/>
+    <attr name="spacing15" format="reference"/>
+    <attr name="spacing16" format="reference"/>
+    <attr name="spacing17" format="reference"/>
+    <attr name="spacing18" format="reference"/>
+    <attr name="spacing19" format="reference"/>
+    <attr name="spacing20" format="reference"/>
+    <attr name="spacing21" format="reference"/>
+    <attr name="spacing22" format="reference"/>
+    <attr name="spacing23" format="reference"/>
+    <attr name="spacing24" format="reference"/>
+    <attr name="spacing25" format="reference"/>
+    <attr name="spacing26" format="reference"/>
+    <attr name="spacing27" format="reference"/>
+    <attr name="spacing28" format="reference"/>
+</resources>

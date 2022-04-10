@@ -37,7 +37,6 @@
 
             <EditText
                 android:id="@+id/etSearch"
-                style="@style/Montserrat.Black1.14sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/black6"

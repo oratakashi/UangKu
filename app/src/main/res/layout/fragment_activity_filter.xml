@@ -22,7 +22,6 @@
 
     <TextView
         android:id="@+id/textView4"
-        style="@style/Montserrat.Bold.Black1.18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -34,7 +33,6 @@
 
     <TextView
         android:id="@+id/tvAll"
-        style="@style/Montserrat.Black1.14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -56,7 +54,6 @@
 
     <TextView
         android:id="@+id/tvIncome"
-        style="@style/Montserrat.Black1.14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -77,7 +74,6 @@
 
     <TextView
         android:id="@+id/tvExpanse"
-        style="@style/Montserrat.Black1.14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="shadow1dp" format="reference" />
+    <attr name="shadow2dp" format="reference" />
+    <attr name="shadow4dp" format="reference" />
+    <attr name="shadow8dp" format="reference" />
+    <attr name="shadow16dp" format="reference" />
+</resources>

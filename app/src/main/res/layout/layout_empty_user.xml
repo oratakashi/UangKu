@@ -32,8 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/label_belum_login"
-                style="@style/Montserrat.Bold.Black1.18sp"/>
+                android:text="@string/label_belum_login"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -41,8 +40,7 @@
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:paddingEnd="10dp"
-                android:text="@string/label_not_login_deskription"
-                style="@style/Montserrat.Black3.14sp"/>
+                android:text="@string/label_not_login_deskription"/>
         </LinearLayout>
 
         <ImageView
